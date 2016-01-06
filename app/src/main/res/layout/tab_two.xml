@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/tab_two_background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/justusetolocate"/>
+    <LinearLayout
+        android:id="@+id/ll_twobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/justusetolocate"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_chaxun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cornerl"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@mipmap/imagechaxun"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="查询"
+                android:paddingBottom="4dp"
+                android:textColor="#676767"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ll_chaxun"
+            android:background="@drawable/cornerr"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@mipmap/imageshenpi"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="审批"
+                android:paddingBottom="4dp"
+                android:textColor="#676767"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_twobtn"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:textColor="#343434"
+        android:text="  C S U  "
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"/>
+    <Button
+
+        android:background="@drawable/corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="老师使用教程"
+        android:textColor="#676767"
+        android:padding="16dp"
+        android:id="@+id/teacher_howtouse"
+        android:layout_below="@id/ll_twobtn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"/>
+    <Button
+        android:background="@drawable/corner"
+        android:textColor="#676767"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学生使用教程"
+        android:id="@+id/student_howtouse"
+        android:layout_below="@id/teacher_howtouse"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School of Foreign Lnguages"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="8dp"
+        />
+</RelativeLayout>

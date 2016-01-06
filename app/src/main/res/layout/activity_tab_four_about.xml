@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/rl">
+
+    <ImageView
+        android:id="@+id/aboutpic"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/aboutpig"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/author"
+        android:text="King Team"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#212132"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/author1"
+        android:layout_above="@id/author"
+        android:layout_centerHorizontal="true"
+        android:textColor="#212121"
+        android:textSize="16dp"
+        android:text="School of Software"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/ge"
+        android:background="#b6b6b6"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@id/author1"/>
+    <TextView
+        android:id="@+id/version"
+        android:text="V1.0.0"
+        android:layout_marginTop="16dp"
+        android:textColor="#727272"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ge"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

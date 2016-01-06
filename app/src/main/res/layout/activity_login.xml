@@ -1,0 +1,143 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8ff"
+        android:gravity="top">
+        <ImageView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/pic"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+
+           />
+        <RelativeLayout
+            android:layout_below="@id/test"
+            android:id="@+id/input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:background="#ffffff"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/fengeixianS"
+                android:layout_width="fill_parent"
+
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fengeixianS"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@null"
+                android:drawablePadding="8dp"
+                android:hint="@string/promt_username"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="#000000"
+
+                />
+
+            <TextView
+                android:id="@+id/fengexian"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/username"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="24dp"
+                android:background="#c0c0c0"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fengexian"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:drawablePadding="8dp"
+                android:hint="@string/promt_password"
+                android:password="true"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/fengexianX"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/password"
+                android:background="#c0c0c0"
+                />
+
+
+
+
+        </RelativeLayout>
+        <Spinner
+
+            android:paddingLeft="36dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+
+            android:id="@+id/select"
+            android:layout_below="@id/input"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/fengexiane"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/select"
+            android:background="#c0c0c0"
+            />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fengexiane"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/selector"
+            android:text="@string/subimt"
+            android:textColor="#f5f5f5"
+            android:textSize="18dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:text="@string/about"
+            android:textColor="#123566"/></LinearLayout>
+</LinearLayout>
